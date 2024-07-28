@@ -1,35 +1,31 @@
-// Show signup form with animation
 document.getElementById("showSignup").addEventListener("click", function () {
   const loginForm = document.getElementById("loginFormContainer");
   const signupForm = document.getElementById("signupFormContainer");
 
   loginForm.classList.remove("show");
   signupForm.classList.add("show");
-  loginForm.style.display = "none"; // Hide login form immediately
-  signupForm.style.display = "block"; // Show signup form
+  loginForm.style.display = "none";
+  signupForm.style.display = "block";
   requestAnimationFrame(() => {
-    signupForm.classList.add("show"); // Trigger animation
+    signupForm.classList.add("show");
   });
 });
 
-// Show login form with animation
 document.getElementById("showLogin").addEventListener("click", function () {
   const loginForm = document.getElementById("loginFormContainer");
   const signupForm = document.getElementById("signupFormContainer");
 
   signupForm.classList.remove("show");
   loginForm.classList.add("show");
-  signupForm.style.display = "none"; // Hide signup form immediately
-  loginForm.style.display = "block"; // Show login form
+  signupForm.style.display = "none";
+  loginForm.style.display = "block";
   requestAnimationFrame(() => {
-    loginForm.classList.add("show"); // Trigger animation
+    loginForm.classList.add("show");
   });
 });
 
-// Retrieve users from local storage
 const users = JSON.parse(localStorage.getItem("users")) || {};
 
-// Login form submission handling
 document
   .getElementById("loginForm")
   .addEventListener("submit", function (event) {
@@ -41,22 +37,19 @@ document
     const loginFormContainer = document.getElementById("loginFormContainer");
 
     if (users[username] && users[username] === password) {
-      window.location.href = "home.html";
+      window.location.href = "../main/home.html";
     } else {
       messageElement.style.color = "red";
       messageElement.textContent = "Invalid username or password.";
 
-      // Add shake effect
       loginFormContainer.classList.add("shake");
 
-      // Remove shake class after animation ends
       setTimeout(() => {
         loginFormContainer.classList.remove("shake");
-      }, 500); // Match the duration of the animation
+      }, 500);
     }
   });
 
-// Signup form submission handling
 document
   .getElementById("signupForm")
   .addEventListener("submit", function (event) {
