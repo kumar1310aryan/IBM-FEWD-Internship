@@ -1,0 +1,136 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff; /* Changed to white for a lighter background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 400px; /* Increased width for a more spacious layout */
+  text-align: center;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.form-container {
+  background-color: #f9f9f9; /* Light background for form containers */
+  padding: 30px; /* Increased padding for a more comfortable feel */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  color: #333; /* Darker text color for better readability */
+  margin-bottom: 30px; /* More space between forms */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #27ae60; /* Green color for headings */
+}
+
+.input-group {
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555; /* Darker label color */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px; /* Increased padding for input fields */
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Light border for input fields */
+  border-radius: 5px; /* Slightly rounded corners */
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px; /* Increased padding for buttons */
+  background-color: #27ae60; /* Green button color */
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+button:hover {
+  background-color: #2ecc71; /* Lighter green on hover */
+}
+
+#loginMessage,
+#signupMessage {
+  margin-top: 15px;
+  color: red;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.links a {
+  color: #27ae60; /* Green color for links */
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.social-login button {
+  width: 48%;
+  padding: 12px; /* Increased padding for social buttons */
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners */
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-login .facebook {
+  background-color: #3b5998; /* Facebook color */
+}
+
+.social-login .facebook:hover {
+  background-color: #2d4373; /* Darker Facebook color on hover */
+}
+
+.social-login .twitter {
+  background-color: #1da1f2; /* Twitter color */
+}
+
+.social-login .twitter:hover {
+  background-color: #0d95e8; /* Darker Twitter color on hover */
+}
+
+.switch-form {
+  margin-top: 20px;
+}
+
+.switch-form span {
+  margin-right: 10px;
+}
+
+@keyframes shake {
+  0% { transform: translate(0); }
+  25% { transform: translate(-5px); }
+  50% { transform: translate(5px); }
+  75% { transform: translate(-5px); }
+  100% { transform: translate(0); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
