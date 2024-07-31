@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealShare: Share more, Waste less</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 40px 40px;
+        height: 70%;
+        font-family: "Arial", sans-serif;
+        color: rgb(0, 0, 0);
+        background: url("images/pngtree-shades-of-green-image_712859.jpg")
+          no-repeat center center fixed;
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+      }
+      .welcome {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+      .description {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+      }
+      .buttons {
+        margin-bottom: 40px;
+      }
+      .button {
+        background: transparent;
+        border: 2px solid rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background 0.3s, color 0.3s;
+      }
+      .button:hover {
+        background: rgb(220, 242, 217);
+        color: black;
+      }
+      .social-icons {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .social-icons a {
+        color: rgb(5, 5, 5);
+        margin: 5px 0;
+        font-size: 1.5em;
+        transition: color 0.3s;
+      }
+      .social-icons a:hover {
+        color: #0084ff;
+      }
+      .mealshare {
+        color: rgba(137, 231, 6, 0.709);
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8em;
+      }
+      img {
+        margin-top: 0;
+        padding-bottom: 60px;
+      }
+      @media (max-width: 600px) {
+        .welcome {
+          font-size: 2em;
+        }
+        .description {
+          font-size: 1.2em;
+          padding: 0 10px;
+        }
+        .buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .button {
+          width: 100%;
+          max-width: 300px;
+        }
+        img {
+          margin-top: 10;
+          padding-bottom: 20px;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/logo.png" alt="" height="100px" width="400px" />
+      <div class="welcome">Share More, Waste Less</div>
+      <div class="description">
+        Join us in reducing food waste and making a difference in the community.
+        Whether you're an NGO, a restaurant, or an individual, you can help by
+        sharing surplus food with those in need.
+      </div>
+      <div class="buttons">
+        <button class="button">NGO Login</button>
+        <button class="button">Donor Login</button>
+        <button class="button">Individual Login</button>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-behance"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="mealshare" color="">@MealShare</div>
+  </body>
+</html>
