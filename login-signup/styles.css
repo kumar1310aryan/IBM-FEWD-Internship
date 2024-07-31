@@ -6,6 +6,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  flex-direction: column;
 }
 
 .container {
@@ -61,6 +62,15 @@ button {
 
 button:hover {
   background-color: #2ecc71;
+}
+
+header {
+  padding-left: 60px;
+}
+
+header p {
+  font-size: 20px;
+  color: rgb(66, 65, 65);
 }
 
 #loginMessage,
