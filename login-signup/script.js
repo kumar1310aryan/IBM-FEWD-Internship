@@ -39,7 +39,16 @@ document
     
 
     if (users[username] && users[username] === password) {
-      window.location.href = "../main/home.html";
+      
+
+      const userType = document.getElementById("userType").value; // Get user type
+      if (userType === "donar") {
+        window.location.href = "../main/donar/donar_dashboard.html";
+      } else if (userType === "individual") {
+        window.location.href = "../main/individual/individual_dashboard.html";
+      } else if (userType === "ngo") {
+        window.location.href = "../main/ngo/ngo_dashboard.html";
+      }
     } else {
       messageElement.style.color = "red";
       messageElement.textContent = "Invalid username or password.";
@@ -71,29 +80,30 @@ document
 //     }
 //   });
 
-document.getElementById("signupForm").addEventListener("submit", function (event) {
-  event.preventDefault();
+document
+  .getElementById("signupForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  const username = document.getElementById("signupUsername").value;
-  const password = document.getElementById("signupPassword").value;
-  const messageElement = document.getElementById("signupMessage");
-  const userType = document.getElementById("userType").value; // Get user type
+    const username = document.getElementById("signupUsername").value;
+    const password = document.getElementById("signupPassword").value;
+    const messageElement = document.getElementById("signupMessage");
+    const userType = document.getElementById("userType").value; // Get user type
 
-  if (users[username]) {
-    messageElement.style.color = "red";
-    messageElement.textContent = "Username already exists.";
-  } else {
-    users[username] = password;
-    localStorage.setItem("users", JSON.stringify(users));
+    if (users[username]) {
+      messageElement.style.color = "red";
+      messageElement.textContent = "Username already exists.";
+    } else {
+      users[username] = password;
+      localStorage.setItem("users", JSON.stringify(users));
 
-    // Redirect based on user type
-    if (userType === "donar") {
-      window.location.href = "signup_success_donar.html";
-    } else if (userType === "individual") {
-      window.location.href = "signup_success_individual.html";
-    } else if (userType === "ngo") {
-      window.location.href = "signup_success_ngo.html";
+      // Redirect based on user type
+      if (userType === "donar") {
+        window.location.href = "signup_success_donar.html";
+      } else if (userType === "individual") {
+        window.location.href = "signup_success_individual.html";
+      } else if (userType === "ngo") {
+        window.location.href = "signup_success_ngo.html";
+      }
     }
-  }
-});
-
+  });
