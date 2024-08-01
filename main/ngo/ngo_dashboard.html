@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap-social.css">
     <link rel="stylesheet" href="../css/style_index.css">
+    <link rel="stylesheet" href="ngo.css">
+
+    <style></style>
     <title>Your Dashboard</title>
   </head>
   <body>
@@ -34,6 +37,60 @@
         
     </nav>
 
+    <div class="hero-section">
+      <div class="hero-content">
+          <h1>Welcome to MealShare NGO Dashboard</h1>
+          <p>Your central hub for managing food donations and requests.</p>
+      </div>
+  </div>
+
+  <section class="how-it-works">
+      <div class="container">
+          <h2>How It Works</h2>
+          <div class="steps">
+              <div class="step">
+                  <h3>1. Register Your Organization</h3>
+                  <p>Sign up and provide details about your NGO to get started.</p>
+              </div>
+              <div class="step">
+                  <h3>2. Manage Food Requests</h3>
+                  <p>View and respond to food requests from various donors.</p>
+              </div>
+              <div class="step">
+                  <h3>3. Track Donations</h3>
+                  <p>Monitor and manage the food donations you receive.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="dashboard-content">
+      <div class="container">
+          <div class="card">
+              <h2>Food Requests</h2>
+              <div id="food-requests">
+                  <!-- Food requests will be dynamically populated here -->
+              </div>
+          </div>
+          <div class="card">
+              <h2>Recent Donations</h2>
+              <div id="recent-donations">
+                  <!-- Recent donations will be dynamically populated here -->
+              </div>
+          </div>
+          <div class="card">
+              <h2>Contact Support</h2>
+              <p>If you need assistance, please reach out to our support team.</p>
+              <a href="mailto:support@mealshare.org" class="button">Contact Support</a>
+          </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+      <p>&copy; 2024 MealShare. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
+
+
 
 
     <script src="../js/jquery.slim.min.js"></script>
@@ -42,6 +99,7 @@
 <script src="../https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../js/jquery.js"></script>
 <script src="../https://use.fontawesome.com/5f877ec309.js"></script>
+<script src="ngo.js"></script>
 
   </body>
 </html>
