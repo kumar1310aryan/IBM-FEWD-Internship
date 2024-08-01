@@ -36,6 +36,8 @@ document
     const messageElement = document.getElementById("loginMessage");
     const loginFormContainer = document.getElementById("loginFormContainer");
 
+    
+
     if (users[username] && users[username] === password) {
       window.location.href = "../main/home.html";
     } else {
