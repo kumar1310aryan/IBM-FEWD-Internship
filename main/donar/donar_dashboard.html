@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap-social.css">
     <link rel="stylesheet" href="../css/style_index.css">
+    <link rel="stylesheet" href="donar.css">
     <title>Your Dashboard</title>
   </head>
   <body>
@@ -35,6 +36,58 @@
     </nav>
 
 
+    <div class="hero-section">
+      <div class="hero-content">
+          <h1>Welcome to Your Donor Dashboard</h1>
+          <p>Manage your food donations and track your impact.</p>
+      </div>
+  </div>
+
+  <section class="donor-dashboard">
+      <div class="container">
+          <div class="dashboard-summary">
+              <div class="card summary-card">
+                  <h2>Your Recent Donations</h2>
+                  <div id="recent-donations">
+                      <!-- Recent donations will be dynamically populated here -->
+                  </div>
+              </div>
+              <div class="card summary-card">
+                  <h2>Your Pending Requests</h2>
+                  <div id="pending-requests">
+                      <!-- Pending requests will be dynamically populated here -->
+                  </div>
+              </div>
+          </div>
+
+          <div class="card donation-form">
+              <h2>Make a Donation</h2>
+              <form id="donation-form">
+                  <label for="donation-type">Type of Donation:</label>
+                  <select id="donation-type" name="donation-type">
+                      <option value="food">Food</option>
+                      <option value="money">Money</option>
+                      <option value="other">Other</option>
+                  </select>
+
+                  <label for="donation-quantity">Quantity:</label>
+                  <input type="text" id="donation-quantity" name="donation-quantity" placeholder="Enter quantity">
+
+                  <label for="donation-date">Date:</label>
+                  <input type="date" id="donation-date" name="donation-date">
+
+                  <label for="donation-details">Additional Details:</label>
+                  <textarea id="donation-details" name="donation-details" rows="4" placeholder="Provide any additional details"></textarea>
+
+                  <button type="submit" class="button">Submit Donation</button>
+              </form>
+          </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+      <p>&copy; 2024 MealShare. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
 
     <script src="../js/jquery.slim.min.js"></script>
     <script src="../js/popper.min.js"></script>
@@ -42,6 +95,7 @@
     <script src="../https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/jquery.js"></script>
     <script src="../https://use.fontawesome.com/5f877ec309.js"></script>
+    <script src="donar.js"></script>
 
   </body>
 </html>

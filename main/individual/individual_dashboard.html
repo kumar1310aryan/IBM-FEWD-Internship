@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap-social.css">
     <link rel="stylesheet" href="../css/style_index.css">
+    <link rel="stylesheet" href="individual.css">
     <title>Your Dashboard</title>
   </head>
   <body>
@@ -35,6 +36,58 @@
     </nav>
 
 
+    <div class="hero-section">
+      <div class="hero-content">
+          <h1>Welcome to Your Individual Donor Dashboard</h1>
+          <p>Share your leftover food from events and make a difference!</p>
+      </div>
+  </div>
+
+  <section class="individual-donor-dashboard">
+      <div class="container">
+          <div class="dashboard-summary">
+              <div class="card summary-card">
+                  <h2>Your Recent Donations</h2>
+                  <div id="recent-donations">
+                      <!-- Recent donations will be dynamically populated here -->
+                  </div>
+              </div>
+              <div class="card summary-card">
+                  <h2>Your Pending Requests</h2>
+                  <div id="pending-requests">
+                      <!-- Pending requests will be dynamically populated here -->
+                  </div>
+              </div>
+          </div>
+
+          <div class="card donation-form">
+              <h2>Donate Leftover Food</h2>
+              <form id="donation-form">
+                  <label for="event-name">Event Name:</label>
+                  <input type="text" id="event-name" name="event-name" placeholder="Enter the name of your event">
+
+                  <label for="food-type">Type of Food:</label>
+                  <input type="text" id="food-type" name="food-type" placeholder="e.g., Vegetarian, Non-Vegetarian">
+
+                  <label for="quantity">Quantity:</label>
+                  <input type="text" id="quantity" name="quantity" placeholder="Enter quantity (e.g., number of servings)">
+
+                  <label for="pickup-date">Preferred Pickup Date:</label>
+                  <input type="date" id="pickup-date" name="pickup-date">
+
+                  <label for="additional-details">Additional Details:</label>
+                  <textarea id="additional-details" name="additional-details" rows="4" placeholder="Provide any additional details or special instructions"></textarea>
+
+                  <button type="submit" class="button">Submit Donation</button>
+              </form>
+          </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+      <p>&copy; 2024 MealShare. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
+
 
     <script src="../js/jquery.slim.min.js"></script>
 <script src="../js/popper.min.js"></script>
@@ -42,6 +95,7 @@
 <script src="../https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../js/jquery.js"></script>
 <script src="../https://use.fontawesome.com/5f877ec309.js"></script>
+<script src="individual.js"></script>
 
   </body>
 </html>
